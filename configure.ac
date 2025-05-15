@@ -36,7 +36,8 @@ AM_CONDITIONAL([VENDOR_QCOM], [test "x${with_qcom}" = "xyes"])
 AC_CONFIG_FILES([Makefile])
 
 AM_COND_IF([VENDOR_QCOM],
-        [AC_CONFIG_FILES([qcom/Makefile qcom/kvh2xml.pc])])
+        [AC_CONFIG_FILES([qcom/Makefile qcom/kvh2xml.pc \
+                          qcom/qcm6490/Makefile qcom/qcm6490/config.pc])])
 
 AC_CONFIG_FILES([ \
         linux/Makefile \
