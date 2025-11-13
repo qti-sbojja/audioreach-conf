@@ -450,6 +450,7 @@ enum Key_Channels {
     CHANNELS_14 = 14, /**< @h2xmle_name {CHS_14}*/
     CHANNELS_15 = 15, /**< @h2xmle_name {CHS_15}*/
     CHANNELS_16 = 16, /**< @h2xmle_name {CHS_16}*/
+    CHANNELS_32 = 32, /**< @h2xmle_name {CHS_32}*/
 };
 
 /**
