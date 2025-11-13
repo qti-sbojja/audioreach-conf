@@ -993,6 +993,7 @@ enum Tag_Definitions {
     TRANSLATION_TTS                 = 0xC0000062, /**< @h2xmle_name {"translation_tts"} @h2xmle_description {Use this tag for setting config to the TTS module in the Call Translation Graph.}  */
     TAG_MODULE_WNR                  = 0xC0000063, /**< @h2xmle_name {"module_wnr"} @h2xmle_description {Tag to be used to identify the MIID of WNR module} */
     TAG_MODULE_SDZ                  = 0xC0000064, /**< @h2xmle_name {"module_sdz"} @h2xmle_description {Tag to be used to identify the MIID of speaker diarization module} */
+    MODULE_SA_HDT                   = 0xC0000066, /**< @h2xmle_name {"module_sa_hdt"} @h2xmle_description {Tag to be used to identify the MIID of spatializer headtracking module} */
 };
 typedef enum Tag_Definitions Tag_Definitions;
 
