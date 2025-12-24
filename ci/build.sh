@@ -8,7 +8,7 @@ echo "Running build script..."
 # Build/Compile audioreach-conf
 # make sure we are in the right directory
 cd ${GITHUB_WORKSPACE}
-source ${GITHUB_WORKSPACE}/install/environment-setup-armv8-2a-poky-linux
+source ${GITHUB_WORKSPACE}/install/environment-setup-armv8-2a-qcom-linux
 mkdir ${GITHUB_WORKSPACE}/build
 mkdir ${GITHUB_WORKSPACE}/build/etc
 mkdir ${GITHUB_WORKSPACE}/build/etc/acdbdata
