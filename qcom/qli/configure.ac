@@ -1,4 +1,3 @@
-#                                               -*- Autoconf -*-
 # configure.ac -- Autoconf script for audioreach-conf
 #
 
@@ -27,22 +26,12 @@ AC_PROG_MAKE_SET
 AM_PROG_AR
 PKG_PROG_PKG_CONFIG
 
-AC_ARG_WITH([qcom],
-    AS_HELP_STRING([Use qcom based configuration (default is no)]),
-        [with_qcom=$withval],
-        [with_qcom=no])
-AM_CONDITIONAL([VENDOR_QCOM], [test "x${with_qcom}" = "xyes"])
-
 AC_CONFIG_FILES([ \
-        Makefile \
-        linux/Makefile \
-        linux/kvh2xml.pc \
-        linux/reference/Makefile \
-        linux/reference/config.pc
-        ])
-
-
-# Declare recursive configure into subpackages
-AM_COND_IF([VENDOR_QCOM], [AC_CONFIG_SUBDIRS([qcom])])
+    qcm6490/Makefile qcm6490/config.pc \
+    qcs8275/Makefile qcs8275/config.pc \
+    qcs8300/Makefile qcs8300/config.pc \
+    qcs9100/Makefile qcs9100/config.pc \
+    qcs9075/Makefile qcs9075/config.pc
+    ])
 
 AC_OUTPUT
